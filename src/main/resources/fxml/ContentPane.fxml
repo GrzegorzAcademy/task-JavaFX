@@ -15,6 +15,6 @@
             <TextArea fx:id="outputTextArea" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
-      <Button fx:id="ClearButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="ClearButton" />
+      <Button fx:id="clearButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="ClearButton" />
    </children>
 </VBox>

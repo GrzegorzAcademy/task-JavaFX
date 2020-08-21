@@ -14,18 +14,19 @@ public class ContentPaneControler {
     private TextArea outputTextArea;
 
     @FXML
-    private Button ClearButton;
+    private Button clearButton;
 
-    public void initialize(){
-   inputTextArea.addEventFilter(KeyEvent.KEY_RELEASED,x-> {
-       outputTextArea.setText(new StringBuilder(inputTextArea.getText()).reverse().toString());
-   });
-outputTextArea.addEventFilter(KeyEvent.KEY_RELEASED,keyEvent ->
-        inputTextArea.setText(new StringBuilder(outputTextArea.getText()).reverse().toString()));
-    ClearButton.setOnAction(actionEvent -> {
-        inputTextArea.clear();
-        outputTextArea.clear();
-    });
+    public void initialize() {
+        inputTextArea.addEventFilter(KeyEvent.KEY_RELEASED, x -> {
+            outputTextArea.setText(new StringBuilder(inputTextArea.getText()).reverse().toString());
+        });
+        outputTextArea.addEventFilter(KeyEvent.KEY_RELEASED, keyEvent ->
+                inputTextArea.setText(new StringBuilder(outputTextArea.getText()).reverse().toString()));
+
+        clearButton.setOnAction(actionEvent -> {
+            inputTextArea.clear();
+            outputTextArea.clear();
+        });
     }
 
 }
