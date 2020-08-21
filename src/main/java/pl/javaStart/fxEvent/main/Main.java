@@ -1,4 +1,4 @@
-package pl.javaStart.fxAction.main;
+package pl.javaStart.fxEvent.main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,11 +13,10 @@ launch(args);
 
     @Override
     public void start(Stage stage) throws Exception {
-        VBox load = FXMLLoader.load(getClass().getResource("/mainPane.fxml"));
+        VBox load = FXMLLoader.load(getClass().getResource("/fxml/ContentPane.fxml"));
         Scene scene = new Scene(load);
-        stage.setTitle("Event Example");
         stage.setScene(scene);
+        stage.setTitle("Events");
         stage.show();
-
     }
 }
