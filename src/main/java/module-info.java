@@ -1,7 +1,8 @@
 module javaFX {
    requires javafx.fxml;
-   requires javafx.graphics;
+
    requires javafx.controls;
-   exports pl.javaStart.fxAction.main to javafx.graphics;
+
+   exports pl.javaStart.fxAction.main;
    opens pl.javaStart.fxAction.controller to javafx.fxml;
 }
