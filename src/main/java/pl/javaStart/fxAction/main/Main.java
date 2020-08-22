@@ -13,11 +13,6 @@ launch(args);
 
     @Override
     public void start(Stage stage) throws Exception {
-        VBox load = FXMLLoader.load(getClass().getResource("/mainPane.fxml"));
-        Scene scene = new Scene(load);
-        stage.setTitle("Event Example");
-        stage.setScene(scene);
-        stage.show();
 
     }
 }

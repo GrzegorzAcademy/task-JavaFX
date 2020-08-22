@@ -17,13 +17,5 @@ public class MainPainController {
     public void initialize() {
 
     }
-
-    public void toLowerCaseAction(ActionEvent actionEvent) {
-        System.out.println(actionEvent.getEventType());
-        System.out.println("Wcisnieto przycisk 1");
-        String orginalText = mainTextArea.getText();
-        String newText = orginalText.toLowerCase();
-        mainTextArea.setText(newText);
-    }
-
 }
+
